@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RailsProjectWithModels</title>
+  <title>HW3 Rails Project With Models</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+	<h1>HW3 - User and Article models</h1>
+
+	<ul>
+		<li>
+			<%= link_to "Welcome", welcome_path %>
+		</li>
+		<li>
+			<%= link_to "User Portal", user_path %>
+		</li>
+		<li>
+			<%= link_to "Article Archive", articles_path %>
+		</li>
+	</ul>
 
 <%= yield %>
 

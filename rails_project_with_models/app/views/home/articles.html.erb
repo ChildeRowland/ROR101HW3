@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<h3>Article Archive</h3>
+
+<div>
+	<% x = @articles.last %>
+	<p>
+		<%= "Posted by: #{x.user.fname}, from #{x.title}" %>
+	</p>
+	<p>
+		<%= x.body %>
+	</p>
+</div>
+
+<div>
+	<% x = @articles.first %>
+	<p>
+		<%= "Posted by: #{x.user.fname}, from #{x.title}" %>
+	</p>
+	<p>
+		<%= x.body %>
+	</p>
+</div>
